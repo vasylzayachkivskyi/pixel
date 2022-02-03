@@ -184,7 +184,7 @@
 }
 
 .box {
-  animation: 5s ease-in-out infinite boxUp;
+  animation: 4s ease-in-out infinite boxUp;
 }
 
 
@@ -193,7 +193,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
   100% {
     transform: translateY(0px);

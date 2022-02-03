@@ -216,7 +216,7 @@
         </div>
       </section> 
 
-       <section class="moveinto">
+       <section class="moveinto" id="contact">
         <div class="container">
           <div class="row align-items-end">
             <div class="col-lg-6">
@@ -239,13 +239,16 @@
                 <div class="moveinto__contact-text">
                   We are here to see how we can help you today.
                 </div>
-                <div class="moveinto__contact-form" id="contact">
+                <div class="moveinto__contact-form" >
                   <form action="">
                     <input type="text" placeholder="Your Name">
                     <input type="text" placeholder="Your Email">
                     <textarea placeholder="Message"></textarea>
-                    <button type="submit">Send</button>
+                    <!-- <button type="submit">Send</button> -->
                   </form>
+                  <button type="button" class="btn__modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Send
+                  </button>
                 </div>
               </div>
             </div>
@@ -254,8 +257,8 @@
       </section>
 
       <section class="map">
-        <!-- <img src="img/map.png" alt="map">  -->
-        <div id="map"></div> 
+        <img class="map__frame" src="img/map_frame.svg" alt="map">  
+        <img clas="map__img" src="img/map.png" alt="map">
       </section> 
 
     </main>
@@ -358,7 +361,7 @@
   <script src="js/lib/parallax.js"></script>
   <script src="js/main.js"></script>
 
-<script
+<!-- <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8EXDODqcr3A8kvCNweJG9uZQowdEbyOE&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v4_cABD"
     async defer></script>
 
@@ -416,7 +419,8 @@
       var image = "img/marker.png";
       var coordinates = { lat: -31.977220402232717, lng: 115.81005919455018 };
       var options = {
-        center:{ lat: -31.97125643908186, lng:  115.80040274405503},
+        // center:{ lat: -31.97125643908186, lng:  115.80040274405503},
+        center: coordinates,
         zoom: 16,
         styles: styleMap
       };
@@ -438,7 +442,7 @@
 
 
 
-  </script> 
+  </script>  -->
 
 
 </body>
